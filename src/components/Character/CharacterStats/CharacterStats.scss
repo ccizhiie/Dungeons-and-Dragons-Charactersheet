@@ -1,0 +1,49 @@
+@import '../../../scss/base/variables';
+
+.character-stats {
+    max-width: 125px;
+    width: 100%;
+    background-color: $grey-light;
+    padding: 25px 15px;
+}
+.character-stats__item {
+    background-image: url('../../../img/stat.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 110px;
+    text-align: center;
+    padding: 8px 0 6px 0;
+    margin-bottom: 15px;
+}
+.character-stats__item-label {
+    font-weight: bold;
+}
+.character-stats__item-input-ability-score {
+    display: block;
+    max-width: 48px;
+    width: 100%;
+    margin: auto auto 2px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    padding: 8px 0 0;
+    border-radius: 50%;
+    font-size: 16px;
+    &:focus {
+        outline: none;
+    }
+}
+.character-stats__item-input-ability-modifier {
+    width: 100%;
+    padding: 9px 0;
+    font-size: 20px;
+    max-width: 60px;
+    margin: 0 auto;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+}

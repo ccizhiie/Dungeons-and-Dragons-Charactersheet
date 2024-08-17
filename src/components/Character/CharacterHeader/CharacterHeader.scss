@@ -1,0 +1,87 @@
+.character-header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.character-header__name {
+  width: 40%;
+  min-height: 170px;
+  background-image: url('../../../img/headerChar.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 25px 45px ;
+  label {
+      display: block;
+      margin-top: 50px;
+      text-transform: uppercase;
+  }
+  .form-input-wrap {
+    position: relative;
+    margin-bottom: 2rem; /* Tambah jarak ke bawah */
+    margin-top: 1rem; /* Tambah jarak ke atas */
+}
+
+
+  .form-input {
+      border: 1px solid #ccc; // Border for input fields
+      padding: 0.5rem; // Padding inside input
+      border-radius: 4px; // Rounded corners for inputs
+      width: 100%; // Full width for inputs
+  }
+
+  .form-input-label {
+      position: absolute;
+      top: -0.75rem; // Adjust label position as needed
+      left: 0.5rem;
+      background: #fff; // Background color to cover input border
+      padding: 0 0.25rem; // Padding to cover border and make it look nice
+      color: #333; // Label text color
+      border: 1px solid #ccc; // Border for labels
+      border-radius: 4px; // Rounded corners for labels
+      font-size: 0.75rem; // Adjust font size as needed
+      pointer-events: none; // Ensure label does not block input interaction
+  }
+}
+
+.character-header__info {
+  width: 60%;
+  min-height: 190px;
+  background-image: url('../../../img/headerInfo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 90%;
+  transform: translateX(-4px);
+  padding: 60px 40px 20px 40px;
+
+  .character-header__info-row {
+      &:first-of-type {
+          margin-bottom: 15px;
+      }
+  }
+
+  .form-input-wrap {
+      position: relative;
+      margin-bottom: 1rem; // Adjust spacing if needed
+  }
+
+  .form-input {
+      border: 1px solid #ccc; // Border for input fields
+      padding: 0.5rem; // Padding inside input
+      border-radius: 4px; // Rounded corners for inputs
+      width: 100%; // Full width for inputs
+  }
+
+  .form-input-label {
+      position: absolute;
+      top: -0.75rem; // Adjust label position as needed
+      left: 0.5rem;
+      background: #fff; // Background color to cover input border
+      padding: 0 0.25rem; // Padding to cover border and make it look nice
+      color: #333; // Label text color
+      border: 1px solid #ccc; // Border for labels
+      border-radius: 4px; // Rounded corners for labels
+      font-size: 0.75rem; // Adjust font size as needed
+      pointer-events: none; // Ensure label does not block input interaction
+  }
+}
